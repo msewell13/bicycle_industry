@@ -14,28 +14,9 @@ class BikeShop(object):
         self.shop_name = shop_name
         self.margin = margin
         self.inventory = inventory
-        
-        
-        # self.profit = 0
-        # init_inv = [('BMX', 3, 150), ('Huffy', 8, 250)]
-        # if inventory == None:
-        #     self.inventory = []
-        # for item in init_inv:
-        #     self.inventory.append(super(BikeShop, self).__init__(item[0], item[1], item[2]))
-        
-        # for bike in init_inv:
-        #     print(bike)
-        #     # bike.cost = bike[2]
-        #     # bike.markup = bike.cost * self.margin / 100
-        #     # bike.price = bike.cost + bike.markup
 
 
-# Have an inventory of different bicycles
-# Sell bicycles with a margin over their cost
-# Can see how much profit they have made from selling bikes
-
-
-class Customers(BikeShop):
+class Customers(object):
     def __init__(self, name, funds):
         self.name = name
         self.funds = funds
@@ -48,10 +29,6 @@ class Customers(BikeShop):
         self.bike_name = bike_name
         self.retail_cost = retail_cost
         self.funds = self.funds - self.retail_cost
-            
-            
-            
-            # print("Sorry {0}, you're too poor for this bicycle"format(self.name))
         
         
         
